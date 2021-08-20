@@ -1,7 +1,7 @@
 ---
 title: "Análise exploratória de dados de pacientes com pubalgia atlética no Brasil"
 author: '**De:** Felipe Figueiredo **Para:** Rodrigo Góes'
-date: '**Data: ** dd/mm/aaaa'
+date: '**Data: ** 12/07/2019'
 output:
   html_document:
     fig_caption: yes
@@ -177,8 +177,6 @@ dos esportes secundários dos atletas com pubalgia (8 de 14).
 ## Características de dor
 
 
-
-<!-- Table: **Tabela xx** Movimentos em que o participante sente dor. -->
 
 243 participantes alegaram que a dor interfere em sua prática esportiva (99.2%).
 A **figura 5** mostra a proporção de participantes que sente dor em cada um dos locais avaliados neste estudo.

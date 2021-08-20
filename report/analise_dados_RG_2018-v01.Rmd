@@ -1,7 +1,7 @@
 ---
 title: "Análise exploratória de dados de pacientes com pubalgia atlética no Brasil"
 author: '**De:** Felipe Figueiredo **Para:** Rodrigo Góes'
-date: '**Data: ** dd/mm/aaaa'
+date: '**Data: ** 12/07/2019'
 output:
   html_document:
     fig_caption: yes
@@ -229,8 +229,6 @@ movim.tab.prop <- movim.tab.prop[2:6]
 local.tab.n <- table(table(locais$ID)) # número de movimentos em que os participantes sentem dor
 local.tab.prop <- prop.table(table(table(locais$ID))) # prop de movimentos em que os participantes sentem dor
 ```
-
-<!-- Table: **Tabela xx** Movimentos em que o participante sente dor. -->
 
 `r interfere.tab.n[2]` participantes alegaram que a dor interfere em sua prática esportiva (`r format.pct(interfere.tab.prop[2])`).
 A **figura 5** mostra a proporção de participantes que sente dor em cada um dos locais avaliados neste estudo.
