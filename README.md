@@ -18,12 +18,12 @@ Manuscrito em elaboração com Diogo Noronha (colaborador) e Rodrigo Góes (coor
 
 [Ver as etapas desta análise][releases].
 
-**Versão 01 - Análise exploratória de dados** - [Em elaboração][milestone-prequal].
+**Versão 01 - Análise exploratória de dados** - [Concluído][milestone-prequal].
 
 [Planejamento][v01-project].
 
 - [Visualização online][reportviz-v01]
-- Download (DOCX, PDF)
+- [Download][pdf-v01]
 <!-- - [DOCX][docx-v01] -->
 <!-- [PDF][pdf-v01] -->
 
