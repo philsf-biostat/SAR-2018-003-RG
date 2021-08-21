@@ -1,7 +1,7 @@
 ---
 title: "Análise exploratória de dados de pacientes com pubalgia atlética no Brasil"
 author: '**De:** Felipe Figueiredo **Para:** Rodrigo Góes'
-date: '**Data: ** 12/07/2019'
+date: '**Data:** 2019-07-12'
 output:
   html_document:
     fig_caption: yes
@@ -19,7 +19,7 @@ output:
     fig_width: 6
     reference_docx: misc/style.docx
     toc: yes
-subtitle: 'RELATÓRIO: analise_dados_RG_2018-v01'
+subtitle: 'DOCUMENTO: analise_dados_RG_2018-v01'
 toc-title: "Sumário"
 ---
 
