@@ -1,5 +1,6 @@
 ---
 title: "Análise exploratória de dados de pacientes com pubalgia atlética no Brasil"
+subtitle: 'DOCUMENTO: SAR-2018-003-RG-v01'
 author: '**De:** Felipe Figueiredo **Para:** Rodrigo Góes'
 date: '**Data:** 2019-07-12'
 output:
@@ -17,9 +18,8 @@ output:
     fig_caption: yes
     fig_height: 6
     fig_width: 6
-    reference_docx: misc/style.docx
+    reference_docx: misc/style_SAR_pt.docx
     toc: yes
-subtitle: 'DOCUMENTO: analise_dados_RG_2018-v01'
 toc-title: "Sumário"
 ---
 
@@ -31,46 +31,23 @@ library(pander)
 library(knitr)
 library(philsfmisc)
 panderOptions('table.style', 'rmarkdown')
-
+panderOptions('table.split.table', 160)
 ```
 
 ---
 
 **Histórico do documento**
 
-```{r, echo = FALSE}
+```{r history}
 Version <- c("01")
 Changes <- c("Versão inicial")
 history <- cbind(Version, Changes)
 colnames(history) <- c("Versão", "Alterações")
-pander(history, split.cells = 70)
-# kable(history)
+# pander(history, split.cells = 70)
+kable(history)
 ```
 
 ---
-
-<!-- # Assinaturas -->
-
-<!-- ```{r, echo=FALSE} -->
-<!-- sig.field <- "__________________________" -->
-<!-- date.field <- "_____________" -->
-<!-- Stat <- c("Elaborador", "Felipe Figueiredo", "Bioestatístico", sig.field, date.field) -->
-<!-- Reviewer <- c("Revisado por", "", "", sig.field, date.field) -->
-<!-- Approver <- c("Verificado por", "", "", sig.field, date.field) -->
-<!-- Final.Approver <- c("Aprovação final", "", "", sig.field, date.field) -->
-
-<!-- sigs <- rbind( -->
-<!--   Stat -->
-<!--   , Reviewer -->
-<!--   , Approver -->
-<!--   , Final.Approver -->
-<!--   ) -->
-<!-- rownames(sigs) <- NULL -->
-<!-- colnames(sigs) <- c("Papel", "Nome", "Função", "Assinatura", "Data") -->
-
-<!-- pander(sigs, split.cells = c(9, 14, 14, 16, 8), split.table = Inf) -->
-<!-- # kable(sigs) -->
-<!-- ``` -->
 
 # Lista de abreviaturas
 
@@ -104,7 +81,7 @@ source("scripts/visualizacoes.R", encoding = 'UTF-8')
 Foi feita uma análise exploratória de dados, descrevendo o perfil epidemiológico dos participantes do estudo.
 As variáveis categóricas são apresentadas como frequência e proporção (%).
 
-Esta análise foi realizada utilizando-se o software `R` versão `r getRversion()`.
+Esta análise foi realizada utilizando-se o software `R` versão 3.6.1.
 
 # Resultados
 
@@ -141,7 +118,10 @@ o futebol (N = `r N.esportes.fig1[1]`),
 a corrida (N = `r N.esportes.fig1[2]`)
 e a musculação (N = `r N.esportes.fig1[3]`).
 
-![**Figura 1** Prevalência dos esportes nos atletas com pubalgia](../figures/esp_prev.png)
+```{r fig1, fig.cap="**Figura 1** Prevalência dos esportes nos atletas com pubalgia"}
+# ![](../figures/esp_prev.png)
+knitr::include_graphics("../figures/esp_prev.png", error = FALSE)
+```
 
 As três modalidades globalmente mais comuns são também as selecionadas mais tipicamente tanto como esporte principal quanto como esporte secundário.
 Quando consideradas apenas as modalidades principais dos atletas, o futebol foi selecionado como atividade principal por
@@ -176,7 +156,10 @@ Juntos estas duas modalidades representam
 `r format.pct(sum(N.sec.fut[1:2])/sum(N.sec.fut))`
 dos esportes secundários dos atletas com pubalgia (`r sum(N.sec.fut[1:2])` de `r sum(N.sec.fut)`).
 
-![**Figura 2** Esportes auxiliares ao futebol](../figures/esp_sec_fut.png)
+```{r fig2, fig.cap="**Figura 2** Esportes auxiliares ao futebol"}
+# ![](../figures/esp_sec_fut.png)
+knitr::include_graphics("../figures/esp_sec_fut.png", error = FALSE)
+```
 
 ### Atividades auxiliares dos praticantes de corrida
 
@@ -193,7 +176,10 @@ Juntos estas duas modalidades representam
 `r format.pct(sum(N.sec.corr[1:2])/sum(N.sec.corr))`
 dos esportes secundários dos atletas com pubalgia (`r sum(N.sec.corr[1:2])` de `r sum(N.sec.corr)`).
 
-![**Figura 3** Esportes auxiliares à corrida](../figures/esp_sec_corr.png)
+```{r fig3, fig.cap="**Figura 3** Esportes auxiliares à corrida"}
+# ![](../figures/esp_sec_corr.png)
+knitr::include_graphics("../figures/esp_sec_corr.png", error = FALSE)
+```
 
 ### Atividades auxiliares dos praticantes de musculação
 
@@ -210,7 +196,10 @@ Juntos estas duas modalidades representam
 `r format.pct(sum(N.sec.musc[1:2])/sum(N.sec.musc))`
 dos esportes secundários dos atletas com pubalgia (`r sum(N.sec.musc[1:2])` de `r sum(N.sec.musc)`).
 
-![**Figura 4** Esportes auxiliares à musculação](../figures/esp_sec_musc.png)
+```{r fig4, fig.cap="**Figura 4** Esportes auxiliares à musculação"}
+# ![](../figures/esp_sec_musc.png)
+knitr::include_graphics("../figures/esp_sec_musc.png", error = FALSE)
+```
 
 ## Características de dor
 
@@ -252,9 +241,15 @@ A **figura 6** mostra o número de participantes que sente dor em cada movimento
 <!-- - itens 3 e 4: Em quantos movimentos cada participante avaliado sente dor? (resultado que complementa a fig 6) -->
 <!-- - itens 5 e 6: Em quantos locais cada participante avaliado sente dor? (resultado que complementa a fig 5) -->
 
-![**Figura 5** Locais do púbis em que o participante sente dor](../figures/desc_local.png)
+```{r fig5, fig.cap="**Figura 5** Locais do púbis em que o participante sente dor"}
+# ![](../figures/desc_local.png)
+knitr::include_graphics("../figures/desc_local.png", error = FALSE)
+```
 
-![**Figura 6** Movimentos da prática esportiva em que o participante sente dor](../figures/desc_movim.png)
+```{r fig6, fig.cap="**Figura 6** Movimentos da prática esportiva em que o participante sente dor"}
+# ![](../figures/desc_movim.png)
+knitr::include_graphics("../figures/desc_movim.png", error = FALSE)
+```
 
 ## Performance dos exames físicos
 
@@ -264,10 +259,10 @@ Dois exames, por outro lado, tiveram desempenho considerado alto.
 Os exames EF2, EF4 demonstraram resultado positivo em 70% ou mais dos casos.
 
 ```{r}
-pander(tab.ef)
+tab.ef %>% pander(
+   caption = "**Tabela 1** Performance dos 10 exames físicos para detectar a pubalgia nos atletas estudados."
+   )
 ```
-
-Table: **Tabela 1** Performance dos 10 exames físicos para detectar a pubalgia nos atletas estudados.
 
 EF1 = Compressão ortostática do compartimento anterior;  
 EF2 = Flexão simultânea do Quadril e do Abdômen contra resistência;  
@@ -304,8 +299,37 @@ Para determinar a metodologia mais adequada de avaliar estes exames, é necessá
 
 # Conclusões
 
-
 # Referências
+
+<!-- - **SAP-yyyy-NNN-XX-v01** -- Plano Analítico para title -->
+<!-- - Cohen, J. (1988). Statistical power analysis for the behavioral sciences (2nd Ed.). New York: Routledge. -->
 
 # Apêndice
 
+## Análise exploratória de dados
+
+```{r A1, fig.cap="**Figura A1** Distribuição da idade na população do estudo."}
+# ![Age](../figures/distr_age.png)
+# knitr::include_graphics("../figures/distr_age.png", error = FALSE)
+```
+
+## Disponibilidade
+
+<!-- Tanto este documento como o plano analítico correspondente (**SAP-yyyy-NNN-XX-v01**) podem ser obtidos no seguinte endereço: -->
+
+Este documento pode ser obtido no seguinte endereço:
+
+https://github.com/philsf-biostat/SAR-2018-003-RG/
+
+## Dados utilizados
+
+Os dados utilizados neste relatório não podem ser publicados online por questões de sigilo.
+
+```{r data}
+# print analytical of analytical_mockup whether it is the private or public version of the SAR
+
+# analytical %>%
+#   pander(caption = "**Table A1** Tabela de dados analíticos")
+# analytical_mockup %>%
+  # pander(caption = "**Table A1** Estrutura da tabela de dados analíticos")
+```
