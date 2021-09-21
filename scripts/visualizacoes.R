@@ -33,8 +33,8 @@ theme_update(
 
 # ordem de prevalência (Pareto)
 esp.prev <- ggplot(esportes, aes(reorder(ESPORTE, ESPORTE, length), fill = PRINCIPAL)) +
-  geom_bar(fill = ff.col) +
-  xlab("Esporte") + ylab("") +
+  geom_bar() +
+  labs(x = "Esporte principal", y = "") +
   # scale_color_brewer(palette = ff.pal) +
   scale_fill_brewer(palette = ff.pal) +
   coord_flip() +
@@ -56,30 +56,30 @@ ids.musculacao <- as.numeric(levels(ids.musculacao)[ids.musculacao])
 
 esp.sec.fut <- ggplot(esportes[ID %in% ids.futebol & PRINCIPAL == "Secundário"], aes(reorder(ESPORTE, ESPORTE, length))) +
   geom_bar(fill = ff.col) +
-  xlab("Esporte") + ylab("") +
+  labs(x = "Esporte acessório quando o principal é futebol", y = "") +
   # scale_color_brewer(palette = ff.pal) +
   scale_fill_brewer(palette = ff.pal) +
   ylim(c(0, 40)) +
   coord_flip()+
-  ggtitle("Esporte acessório quando o principal é futebol")
+  ggtitle("")
 
 esp.sec.corr <- ggplot(esportes[ID %in% ids.corrida & PRINCIPAL == "Secundário"], aes(reorder(ESPORTE, ESPORTE, length))) +
   geom_bar(fill = ff.col) +
-  xlab("Esporte") + ylab("") +
+  labs(x = "Esporte acessório quando o principal é corrida", y = "") +
   ylim(c(0, 40)) +
   # scale_color_brewer(palette = ff.pal) +
   scale_fill_brewer(palette = ff.pal) +
   coord_flip()+
-  ggtitle("Esporte acessório quando o principal é corrida")
+  ggtitle("")
 
 esp.sec.musc <- ggplot(esportes[ID %in% ids.musculacao & PRINCIPAL == "Secundário"], aes(reorder(ESPORTE, ESPORTE, length))) +
   geom_bar(fill = ff.col) +
-  xlab("Esporte") + ylab("") +
+  labs(x = "Esporte acessório quando o principal é musculação", y = "") +
   ylim(c(0, 40)) +
   # scale_color_brewer(palette = ff.pal) +
   scale_fill_brewer(palette = ff.pal) +
   coord_flip()+
-  ggtitle("Esporte acessório quando o principal é musculação")
+  ggtitle("")
 
 desc.idade <- ggplot(participantes, aes(IDADE.cat)) +
   geom_bar(fill = ff.col) +
@@ -118,7 +118,7 @@ desc.sexo <- ggplot(participantes, aes(SEXO)) +
 
 desc.movim <- ggplot(movim, aes(reorder(MOVIMENTO, MOVIMENTO, length))) +
   geom_bar(aes(y = (..count..)/sum(..count..)), fill = ff.col) +
-  scale_y_continuous(labels=percent) +
+  scale_y_continuous(labels=label_percent(accuracy=1), limits = c(0, .4)) +
   # scale_color_brewer(palette = ff.pal) +
   scale_fill_brewer(palette = ff.pal) +
   xlab("Movimento em que sente dor") + ylab("") +
@@ -127,7 +127,7 @@ desc.movim <- ggplot(movim, aes(reorder(MOVIMENTO, MOVIMENTO, length))) +
 
 desc.local <- ggplot(locais, aes(reorder(LOCAL, LOCAL, length))) +
   geom_bar(aes(y = (..count..)/sum(..count..)), fill = ff.col) +
-  scale_y_continuous(labels=percent) +
+  scale_y_continuous(labels=label_percent(accuracy=1), limits = c(0, .4)) +
   # scale_color_brewer(palette = ff.pal) +
   scale_fill_brewer(palette = ff.pal) +
   xlab("Local em que sente dor") + ylab("") +
