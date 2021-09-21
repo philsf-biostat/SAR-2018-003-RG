@@ -55,7 +55,7 @@ kable(history)
 
 ## Objetivos
 
-Descrever as ocorrências de pubalgia em atletas de diversas modalidades esportivas e níveis de dedicação.
+Descrever as ocorrências de diversas modalidades esportivas e níveis de dedicação em atletas com pubalgia.
 
 ## Recepção e tratamento dos dados
 
