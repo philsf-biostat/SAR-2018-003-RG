@@ -1,48 +1,57 @@
 # Análise exploratória de dados de pacientes com pubalgia atlética no Brasil
 
-Análise de Dados projeto Pubalgia Atlética (Artigo, 2018)
+Descrever as ocorrências de diversas modalidades esportivas e níveis de dedicação em atletas com pubalgia.
 
-Manuscrito em elaboração com Diogo Noronha (colaborador) e Rodrigo Góes (coordenador).
+Manuscrito em elaboração com Diogo Noronha (colaborador) e Rodrigo Góes (coordenador) (INTO, 2018).
 
 ## Análises realizadas
 
-1. Análise descritiva ([Planejamento][proj-xxx])
-<!-- 2. yyy ([Planejamento][proj-yyy]) -->
-<!-- 3. zzz ([Planejamento][proj-zzz]) -->
+1. Análise descritiva
+<!-- 1. Análise inferencial -->
+<!-- 1. Análise de poder -->
+<!-- 1. Modelagem estatística -->
 
-[proj-xxx]: https://github.com/philsf-biostat/analise_dados_RG_2018/projects/1
-[proj-yyy]: https://github.com/philsf-biostat/analise_dados_RG_2018/projects/yyy
-[proj-zzz]: https://github.com/philsf-biostat/analise_dados_RG_2018/projects/zzz
+## Documentos
 
-## Relatório da análise de dados
+### Plano Analítico (SAP)
 
-[Ver as etapas desta análise][releases].
+<!-- - [Visualização online][sapviz-v02] -->
+<!-- - [Download][sappdf-v02] -->
 
-**Versão 01 - Análise exploratória de dados** - [Concluído][milestone-prequal].
+- [Visualização online][sapviz-v01]
+- [PDF][sappdf-v01]
 
-[Planejamento][v01-project].
-
-- [Visualização online][reportviz-v01]
-- [Download][pdf-v01]
-<!-- - [DOCX][docx-v01] -->
-<!-- [PDF][pdf-v01] -->
-
-<!-- **Versão 02 - Defesa** - [Em elaboração][milestone-posqual]. -->
-
-<!-- [Planejamento][v02-project]. -->
+### Relatório de Análise Estatística (SAR)
 
 <!-- - [Visualização online][reportviz-v02] -->
-<!-- - Download -->
+<!-- - [Download][pdf-v02] -->
 
-[releases]: https://github.com/philsf-biostat/analise_dados_RG_2018/releases/
-[milestone-prequal]: https://github.com/philsf-biostat/analise_dados_RG_2018/milestone/2
-[reportviz-v01]: report/analise_dados_RG_2018-v01.md
-[docx-v01]: report/analise_dados_RG_2018-v01.docx?raw=true
-[pdf-v01]: report/analise_dados_RG_2018-v01.pdf?raw=true
-[v01-project]: https://github.com/philsf-biostat/analise_dados_RG_2018/projects/3
+- [Visualização online][reportviz-v01]
+- [PDF][pdf-v01]
 
-<!-- [milestone-posqual]: https://github.com/philsf-biostat/analise_dados_RG_2018/milestone/xxx -->
-<!-- [reportviz-v02]: report/analise_dados_RG_2018-v02.md -->
-<!-- [docx-v02]: report/analise_dados_RG_2018-v02.docx?raw=true -->
-<!-- [pdf-v02]: report/analise_dados_RG_2018-v02.pdf?raw=true -->
-<!-- [v02-project]: https://github.com/philsf-biostat/analise_dados_RG_2018/projects/xxx -->
+## Portfólio
+
+Esta análise está incluída no portfólio do consultor.
+Outras análises também podem ser vistas em:
+
+https://philsf-biostat.github.io/
+
+<!-- --- -->
+
+[sapviz-v01]: report/SAP-018-003-RG-v01.md
+[sapviz-v02]: report/SAP-018-003-RG-v02.md
+[sappdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/main/report/SAP-018-003-RG-v01.pdf
+[sappdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/main/report/SAP-018-003-RG-v02.pdf
+
+[reportviz-v01]: report/SAR-018-003-RG-v01.md
+[reportviz-v02]: report/SAR-018-003-RG-v02.md
+[pdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/main/report/SAR-018-003-RG-v01.pdf
+[pdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/main/report/SAR-018-003-RG-v02.pdf
+[docx-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/main/report/SAR-018-003-RG-v01.docx
+[docx-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/main/report/SAR-018-003-RG-v02.docx
+
+[releases]: https://github.com/philsf-biostat/SAR-018-003-RG/releases/
+[milestone-v01]: https://github.com/philsf-biostat/SAR-018-003-RG/milestone/mmm01
+[v01-project]: https://github.com/philsf-biostat/SAR-018-003-RG/projects/ppp01
+[milestone-v02]: https://github.com/philsf-biostat/SAR-018-003-RG/milestone/mmm02
+[v02-project]: https://github.com/philsf-biostat/SAR-018-003-RG/projects/ppp02
