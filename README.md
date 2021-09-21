@@ -38,20 +38,20 @@ https://philsf-biostat.github.io/
 
 <!-- --- -->
 
-[sapviz-v01]: report/SAP-018-003-RG-v01.md
-[sapviz-v02]: report/SAP-018-003-RG-v02.md
-[sappdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/master/report/SAP-018-003-RG-v01.pdf
-[sappdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/master/report/SAP-018-003-RG-v02.pdf
+[sapviz-v01]: report/SAP-2018-003-RG-v01.md
+[sapviz-v02]: report/SAP-2018-003-RG-v02.md
+[sappdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2018-003-RG/raw/master/report/SAP-2018-003-RG-v01.pdf
+[sappdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2018-003-RG/raw/master/report/SAP-2018-003-RG-v02.pdf
 
-[reportviz-v01]: report/SAR-018-003-RG-v01.md
-[reportviz-v02]: report/SAR-018-003-RG-v02.md
-[pdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/master/report/SAR-018-003-RG-v01.pdf
-[pdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/master/report/SAR-018-003-RG-v02.pdf
-[docx-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/master/report/SAR-018-003-RG-v01.docx
-[docx-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-018-003-RG/raw/master/report/SAR-018-003-RG-v02.docx
+[reportviz-v01]: report/SAR-2018-003-RG-v01.md
+[reportviz-v02]: report/SAR-2018-003-RG-v02.md
+[pdf-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2018-003-RG/raw/master/report/SAR-2018-003-RG-v01.pdf
+[pdf-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2018-003-RG/raw/master/report/SAR-2018-003-RG-v02.pdf
+[docx-v01]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2018-003-RG/raw/master/report/SAR-2018-003-RG-v01.docx
+[docx-v02]: https://docs.google.com/viewer?url=https://github.com/philsf-biostat/SAR-2018-003-RG/raw/master/report/SAR-2018-003-RG-v02.docx
 
-[releases]: https://github.com/philsf-biostat/SAR-018-003-RG/releases/
-[milestone-v01]: https://github.com/philsf-biostat/SAR-018-003-RG/milestone/mmm01
-[v01-project]: https://github.com/philsf-biostat/SAR-018-003-RG/projects/ppp01
-[milestone-v02]: https://github.com/philsf-biostat/SAR-018-003-RG/milestone/mmm02
-[v02-project]: https://github.com/philsf-biostat/SAR-018-003-RG/projects/ppp02
+[releases]: https://github.com/philsf-biostat/SAR-2018-003-RG/releases/
+[milestone-v01]: https://github.com/philsf-biostat/SAR-2018-003-RG/milestone/mmm01
+[v01-project]: https://github.com/philsf-biostat/SAR-2018-003-RG/projects/ppp01
+[milestone-v02]: https://github.com/philsf-biostat/SAR-2018-003-RG/milestone/mmm02
+[v02-project]: https://github.com/philsf-biostat/SAR-2018-003-RG/projects/ppp02
